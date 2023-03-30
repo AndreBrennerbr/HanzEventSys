@@ -37,15 +37,3 @@ Route::delete('events/leave/{id}',[EventController::class, 'leaveEvent'])->middl
 
 Route::get('/dashboard',[EventController::class,'dashboard'])->middleware('auth');
 
-/* Route::get('/contact',[ContactController::class,'index']);
-
-Route::get('/products', [ProductsController::class, 'index']);
-
-Route::get('/product/{id}', function ($id) {
-    return view('product',['id' => $id]);
-});
-
-Route::get('/product/{id?}', function ($id = null ) {
-    return view('product',['id' => $id]);
-}); */
-
